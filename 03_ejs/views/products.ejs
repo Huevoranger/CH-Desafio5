@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("templates/head") %>
+  <body>
+    <div>
+        <h1>Productos</h1> 
+        <div>
+          <table border="1">
+          <tbody>
+          <tr>
+            <th>Id</td>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Thumbnail</th>
+          </tr>
+          <% data.forEach(function(pr){ %>
+          <tr>
+            <th><%= pr.id %></th>
+            <td><%= pr.name %></td>
+            <td><%= pr.price %></td>
+            <td><img src="<%= pr.thumbnail %>" width="80" height="80"></td>
+          </tr>
+          <% }); %>
+          </tbody>
+          </table>
+        </div>
+        <a href="/">
+            Volver al formulario
+        </a>
+         
+    </div>
+  </body>
+</html>

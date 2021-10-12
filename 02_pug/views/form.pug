@@ -1,0 +1,21 @@
+html 
+    
+    head 
+        title Desafio 5
+    
+    body 
+        include ./nav.pug
+        div.container
+            h1 Ingreso de productos
+            form(action="/api/productos" method="post")
+                div 
+                    p Producto:
+                    input(type="text" class="form-control" id="name" name="name" required="true")
+                    p Precio
+                    input(type="number" step="0.01" class="form-control" id="price" name="price" required="true")
+                    p Thumbnail:
+                    input(type="text" class="form-control" id="thumbnail" name="thumbnail" required="true")
+
+                    input(type="submit" value="Registrar")
+                    
+        a(href='/api/productos') Ver todos los productos

@@ -1,0 +1,59 @@
+html 
+    
+    head 
+        title Desafio 5
+
+    body 
+        include ./nav.pug
+        div.container
+            table(border= '1')
+                tbody 
+                    tr 
+                        th Id 
+                        th Producto 
+                        th Precio 
+                        th Thumbnail 
+
+                    
+                    each producto in data
+
+                        tr 
+                        
+                            
+                             
+                            td 
+                                id=producto.id
+                            td  
+                                name=producto.name
+                                
+                                
+                            td
+                                price=producto.price
+                            td 
+                                img(src= producto.thumbnail, 'width=80 px', 'height=80 px')
+                                
+
+        a(href='/') Volver al formulario
+//- each pr in data
+//-     li= pr.name + '-' + pr.price
+
+
+//-  <table border="1">
+//-     <tbody>
+//-     <tr>
+//-       <td>Id</td>
+//-       <th>Producto</th>
+//-       <th>Precio</th>
+//-       <th>Thumbnail</th>
+//-     </tr>
+//-     {{#each dta}}
+//-     <tr>
+//-       <th>{{id}}</th>
+//-       <td>{{name}}</td>
+//-       <td>{{price}}</td>
+//-       <td><img src="{{thumbnail}}" width="80" height="80"></td>
+//-     </tr>
+//-      {{/each}}
+//-     </tbody>
+//-     </table>
+//-   </div>
