@@ -1,0 +1,3 @@
+Tuve un poco de problema usando pug, creo que definiticamente no es mi favorito. EJS me gusta que al ser mucho más epxlícito, puedo ser un poco más laxo en cuanto a sintaxis.
+Con handlebars me hallé bastante bien, creo que entre éste y ejs son lo más similar a html con el que estoy un poco más acostumbrado a trabajar, sin embargo quizá sea cuestión
+de práctica para hallarme con uno o con otro
